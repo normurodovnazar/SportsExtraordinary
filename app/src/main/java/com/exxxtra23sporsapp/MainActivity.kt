@@ -11,5 +11,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         bind = MainBinding.inflate(layoutInflater)
         setContentView(bind.root)
+        shit
     }
 }
