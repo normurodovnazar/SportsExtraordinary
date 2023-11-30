@@ -8,7 +8,8 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.exxxtra23sporsapp"
+        //applicationId = "com.exxxtra23sporsapp"
+        applicationId = "com.rs54.sbv"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -22,7 +23,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

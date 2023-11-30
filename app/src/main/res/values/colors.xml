@@ -3,6 +3,7 @@
     <color name="green">#27A073</color>
     <color name="light_green">#DA27A073</color>
     <color name="yellow">#FDB74F</color>
+    <color name="trans">#00000000</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
