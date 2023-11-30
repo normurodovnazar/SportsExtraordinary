@@ -2,28 +2,92 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/background"
+    android:background="@drawable/bg_image"
     android:layout_height="match_parent">
 
-    <TextView
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:text="@string/app_name"
-        android:textAlignment="center"
-        android:textColor="@color/green"
-        android:fontFamily="@font/mont_heavy_fam"
-        android:textSize="25sp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/welcome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    
-    <ImageButton
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/go"
-        android:background="@drawable/round"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_width="60dp"
-        android:layout_height="60dp"/>
+        android:layout_height="match_parent">
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:fontFamily="@font/mont_heavy"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/go"
+            android:background="@drawable/round_button_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:fontFamily="@font/mont_heavy"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:shadowRadius="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:id="@+id/center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"/>
+
+        <Button
+            android:fontFamily="@font/mont_heavy"
+            android:text="Extra sports"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/rect_button_bg"
+            app:layout_constraintBottom_toTopOf="@id/center"
+            android:id="@+id/pages"
+            android:layout_marginVertical="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Criss-cross"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/mont_heavy"
+            android:id="@+id/crossword"
+            android:layout_marginVertical="13dp"
+            android:background="@drawable/rect_button_bg"
+            app:layout_constraintTop_toBottomOf="@id/center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/round"
+            android:src="@drawable/music_on"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
