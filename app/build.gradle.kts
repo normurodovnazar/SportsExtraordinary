@@ -8,8 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        //applicationId = "com.exxxtra23sporsapp"
-        applicationId = "com.rs54.sbv"
+        applicationId = "com.exxxtra23sporsapp"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
